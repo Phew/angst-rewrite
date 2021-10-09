@@ -14,7 +14,7 @@ AngstStealer is a POC malware which is designed to highlight and utilize Discord
 
 ### Setup
 1. Install python [here](https://www.python.org/ftp/python/3.7.7/python-3.7.7-amd64.exe)
-2. Clone this repo using `git clone https://github.com/backslash/AngstStealer` or manually download it.
+2. Clone this repo using `git clone https://github.com/Phew/angst-rewrite/` or manually download it.
 3. Run `cd folderpath` so that you are inside the directory itself.
 4. Install the required libraries using `pip install -r requirements.txt`
 5. Inside the main file you will see a config template, modify it so it matches your requirements.
