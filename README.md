@@ -10,6 +10,7 @@ AngstStealer is a POC malware which is designed to highlight and utilize Discord
 | Send | Zips and sends all the files through the Discord webhook. |
 | User | Drops userdata about the victim such as IP, Username and Computername. |
 | Windows | Also drops the windows activation key for the victims computer. |
+| Cleanup | Cleans up all traces of Angst |
 
 ### Setup
 1. Install python [here](https://www.python.org/ftp/python/3.7.7/python-3.7.7-amd64.exe)
