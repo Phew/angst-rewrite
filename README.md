@@ -47,7 +47,7 @@ ransomware -> If enabled is set to `True` then have enabled the ransomware modul
 ### Demo
 Here is a screenshot of what will be sent through the discord webhook once it is ran. The reason why not windows activation key is included is due to it being run inside a virtual machine thats not activated.
 <p align="center">
-  <img width="560" height="300" src="https://botting.is-ne.at/H5OJTL.png">
+  <img width="560" height="300" src="https://z.zz.fo/sHlrH.png">
 </p>
 
 ### To Do List
