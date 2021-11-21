@@ -53,7 +53,7 @@ Here is a screenshot of what will be sent through the discord webhook once it is
 ### To Do List
 - [ ] Add cookie support (just got lazy and forgot)
 - [ ] Add more browsers
-- [ ] Implement some anti-vm tricks.
+- [X] Implement some anti-vm tricks.
 - [ ] Add more plugins
 
 If you would like to help with something, writing plugins for Angst would be a pretty big help.
