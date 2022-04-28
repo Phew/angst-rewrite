@@ -11,6 +11,7 @@ AngstStealer is a PoC malware which is designed to highlight and utilize Discord
 | User | Drops userdata about the victim such as IP, Username and Computername. |
 | Windows | Also drops the windows activation key for the victims computer. |
 | Cleanup | Cleans up all traces of Angst |
+| AntiVM | Tries to detect if a user is on a virtual machine |
 
 ### Note
 There is a decoy program inside of the main file (angst.py), you should probably remove it, or make your own
