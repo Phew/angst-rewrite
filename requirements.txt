@@ -4,3 +4,4 @@ pyinstaller==3.6
 pyarmor==6.3.3
 pywin32==227
 colorama
+telebot
