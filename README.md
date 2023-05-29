@@ -7,7 +7,8 @@ AngstStealer is a PoC malware which is designed to highlight and utilize Discord
 |Filezilla | Checks to see if the user has Filezilla installed, if they do then it dumps stored Filezilla creds. |
 | Ransomware | Encrypts all files on the victims computer, also drops a note. (INCOMPLETE?) |
 | Discord | Dumps discord token for Chrome and Discord. |
-| Send | Zips and sends all the files through the Discord webhook. |
+| Send_Discord | Zips and sends all the files through the Discord webhook. |
+| Send_Telegram | Zips and sends all the files to a specified Telegram channel. |
 | User | Drops userdata about the victim such as IP, Username and Computername. |
 | Windows | Also drops the windows activation key for the victims computer. |
 | Cleanup | Cleans up all traces of Angst |
