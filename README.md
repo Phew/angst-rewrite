@@ -4,7 +4,7 @@ AngstStealer is a PoC malware which is designed to highlight and utilize Discord
 ### Demo
 Here is a screenshot of what will be sent once it is ran.
 <p align="left">
-  <img src="https://files.dox.tools/G30dzDfE.png">
+  <img src="https://files.offshore.cat/G30dzDfE.png">
 </p>
 The reason why not windows activation key is included is due to it being run inside a virtual machine thats not activated.
 
